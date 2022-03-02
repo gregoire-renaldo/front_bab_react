@@ -1,0 +1,40 @@
+.card {
+  text-decoration: none;
+  color:black;
+  transition: all 0.7s
+}
+.card:hover {
+  transform: scale(1.1)
+}
+.wrapper-cardboat {
+  height: 250px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-top {
+  height: 65%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.card-top img {
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.card-bottom {
+  height: 35%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.wrapper-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

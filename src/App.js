@@ -3,8 +3,9 @@ import Layout from "./layout/Layout";
 
 import Hero from "./components/Hero";
 
-import Content from './components/Content';
+import Content from "./components/Content";
 import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -13,7 +14,6 @@ function App() {
       <Layout>
         <Hero />
         <Content />
-
       </Layout>
       <Footer />
     </>

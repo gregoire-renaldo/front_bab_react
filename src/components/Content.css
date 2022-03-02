@@ -1,6 +1,36 @@
 .container-content {
-  height: 950px;
+  min-height: 950px;
   width: 100%;
 
   background-color: brown;
+
+
+
+}
+
+.content-bloc1 {
+
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+
+.button {
+
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  background-color: azure;
+  color: gray;
+  transition: all 1s;
+}
+
+.button:hover {
+background-color: gray;
+  color: azure;
+
 }
