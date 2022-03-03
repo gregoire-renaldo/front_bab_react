@@ -49,3 +49,9 @@
   transform-origin: right;
   transition: all 0.5s;
 }
+
+/* active-classLink */
+.active-link {
+  color: red;
+  filter: brightness(80%);
+}

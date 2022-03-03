@@ -1,24 +1,46 @@
+import { NavLink } from "react-router-dom";
+
 import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="container-header">
+    <nav className="container-header">
       <ul className="menu1">
         <li>
-          <a href="#">Home</a>
+          <NavLink
+            className={(navData) => (navData.isActive ? "active-link" : "none")}
+            to="/"
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="#">About</a>
+          <NavLink
+            className={(navData) => (navData.isActive ? "active-link" : "none")}
+            to="About"
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <a href="#">Services</a>
+          <NavLink
+            className={(navData) => (navData.isActive ? "active-link" : "none")}
+            to="#"
+          >
+            Services
+          </NavLink>
         </li>
 
         <li>
-          <a href="#">Contact</a>
+          <NavLink
+            className={(navData) => (navData.isActive ? "active-link" : "none")}
+            to="#"
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
