@@ -1,22 +1,17 @@
-import Header from "./components/Header";
+import { Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
-
-import Hero from "./components/Hero";
-
-import Content from "./components/Content";
-import Footer from "./components/Footer";
-
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Header />
-      <Layout>
-        <Hero />
-        <Content />
-      </Layout>
-      <Footer />
-    </>
+    <div>
+    <Layout>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Layout>
+    </div>
   );
 }
 

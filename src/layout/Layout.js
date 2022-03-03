@@ -1,10 +1,16 @@
-import  './Layout.css';
+import "./Layout.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-const Layout = ({children}) => {
-
+const Layout = ({ children }) => {
   return (
-    <main>{children}</main>
-  )
-}
+    <>
+      <Header />
+
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
 
 export default Layout;
