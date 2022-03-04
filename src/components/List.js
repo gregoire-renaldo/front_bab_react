@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import './List.css'
+import { Link } from "react-router-dom";
+import "./List.css";
 
 import CardBoat from "./CardBoat";
 
@@ -22,15 +23,14 @@ const List = () => {
       });
   }
   return (
-    <div  className="wrapper-line list-cards">
-      {data.map((item) => (
-        <CardBoat key={item._id} item={item} />
+    <div className="wrapper-line list-cards">
+      {data.map((boat) => (
+        <Link to={`/boats/${boat._id}`} key={boat._id} >
+          <CardBoat boat={boat} />
+        </Link>
       ))}
     </div>
-
   );
 };
-
-
 
 export default List;
