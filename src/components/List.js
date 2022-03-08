@@ -25,7 +25,7 @@ const List = () => {
   return (
     <div className="wrapper-line list-cards">
       {data.map((boat) => (
-        <Link to={`/boats/${boat._id}`} key={boat._id} >
+        <Link to={`/boats/${boat._id}`} key={boat._id}>
           <CardBoat boat={boat} />
         </Link>
       ))}
